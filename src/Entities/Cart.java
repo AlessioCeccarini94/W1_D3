@@ -13,6 +13,6 @@ public class Cart {
 
 public Cart(Client client, Articolo[] articolo) {
 	this.client = client;
-	this.articolo = new Articolo[0];
+	this.articolo = new Articolo[articolo.length];
 }
 }
