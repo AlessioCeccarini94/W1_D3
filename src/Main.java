@@ -1,13 +1,31 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-	//TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-	// to see how IntelliJ IDEA suggests fixing it.
-	IO.println(String.format("Hello and welcome!"));
+import Entities.Square;
 
-	for (int i = 1; i <= 5; i++) {
-		//TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-		// for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-		IO.println("i = " + i);
+public class Main {
+	public static void main(String[] args) {
+//		Square s1 = new Square(7, 9);
+//		s1.getArea();
+//		s1.getPrimeter();
+//		s1.printAreaAndPerimeter();
+//		System.out.println(s1.sum());
+//		System.out.println(Square.getNumberOfSquare());
+//
+//
+//		Square s2 = new Square(12, 11);
+//		s2.getArea();
+//		s2.getPrimeter();
+//		s2.printAreaAndPerimeter();
+//		System.out.println(s2.sum());
+//		System.out.println(Square.getNumberOfSquare());
+//		System.out.println(s1.sum()+s2.sum());
+
+
+		Square s3 = new Square(12, 11, 5, 8);
+		s3.getArea();
+		s3.getScndArea();
+		s3.getPrimeter();
+		s3.getScndPrimeter();
+		s3.printAreaAndPerimeter();
+		System.out.println("La somma delle aree e dei perimetrié: "+s3.sum());
+		System.out.println(Square.getNumberOfSquare());
 	}
 }
