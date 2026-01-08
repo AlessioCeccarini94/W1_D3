@@ -4,7 +4,7 @@
 //- totale costo articoli
 
 
-package Entities;
+package Entities.es3;
 
 public class Cart {
     private double tot;

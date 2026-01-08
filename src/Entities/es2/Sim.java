@@ -13,7 +13,17 @@
 //Scrivere un main che crei una istanza di SIM e ne stampi i dati.
 
 
-package Entities;
+package Entities.es2;
+
+import java.util.Arrays;
 
 public class Sim {
+	@Override
+	public String toString() {
+		return "Sim{" +
+				"calls=" + Arrays.toString(calls) +
+				'}';
+	}
+
+	Calls[] calls;
 }

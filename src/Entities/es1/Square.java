@@ -8,7 +8,7 @@
 //Scrivere un main che utilizzi tutte queste funzioni.
 
 
-package Entities;
+package Entities.es1;
 
 public class Square {
 	//attributi

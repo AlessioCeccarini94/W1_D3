@@ -8,7 +8,7 @@
 //- numero pezzi disponibili a magazzino
 
 
-package Entities;
+package Entities.es3;
 
 public class Articolo {
 	//ATTRIBUTI
