@@ -67,17 +67,17 @@ public int sumPerimeter(){
 public int sum(){
 	return getPrimeter() + getArea();
 }
-	public void printAreaAndPerimeter() {
-		System.out.println("L'area è: " + getArea());
-		System.out.println("Il perimetro è: " + getPrimeter());
+	public static void printAreaAndPerimeter(Square square) {
+		System.out.println("L'area è: " + square.getArea());
+		System.out.println("Il perimetro è: " + square.getPrimeter());
 	}
 
 	public static void printTwoSquare(Square s1, Square s2) {
 
 		System.out.println("primo rettanangolo : ");
-		s1.printAreaAndPerimeter();
+		s1.printAreaAndPerimeter(s1);
 		System.out.println(" secondo rettangolo: ");
-		s2.printAreaAndPerimeter();
+		s2.printAreaAndPerimeter(s2);
 		System.out.println("la somma delle aree è: " +( s1.area + s2.area));
 
 	}
