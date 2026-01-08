@@ -14,6 +14,21 @@ public class Square {
 	//attributi
 	private static int numberOfSquare=0;
 
+
+
+	//attributi oggetto
+	private int l1;
+	private int l2;
+	private int area;
+	private int perimeter;
+	//costruttore
+	public Square(int l1,int l2) {
+		this.l1 = l1;
+		this.l2 = l2;
+		this.area=this.getArea();
+		this.perimeter=this.getPrimeter();
+		numberOfSquare++;
+	}
 	public static int getNumberOfSquare() {
 		return numberOfSquare;
 	}
@@ -33,68 +48,38 @@ public class Square {
 	public void setL2(int l2) {
 		this.l2 = l2;
 	}
-	public int getL3() {
-		return l3;
-	}
 
-	public void setL3(int l3) {
-		this.l3= l3;
-	}
-	public int getL4() {
-		return l4;
-	}
-
-	public void setL4(int l4) {
-		this.l4 = l4;
-	}
-
-	//attributi oggetto
-	private int l1;
-	private int l2;
-	private int l3;
-	private int l4;
-	//costruttore
-	public Square(int l1,int l2) {
-		this.l1 = l1;
-		this.l2 = l2;
-		numberOfSquare++;
-	}
-
-	public Square(int l1, int l2, int l3, int l4) {
-		this.l1 = l1;
-		this.l2 = l2;
-		this.l3 = l3;
-		this.l4 = l4;
-		numberOfSquare++;
-	}
 		//metodi
 public int getArea(){
 	return l1 * l2;
 	}
-	public int getScndArea(){
-		return l3 * l4;
-	}
+
 public int getPrimeter(){
 	return l1 * 2 + l2 * 2;
 }
-	public int getScndPrimeter(){
-		return l3 * 2 + l4 * 2;
-	}
+
 public int sumArea(){
-	return getArea() + getScndArea();
+	return getArea();
 }
 public int sumPerimeter(){
-	return getPrimeter() + getScndPrimeter();
+	return getPrimeter() ;
 }
 public int sum(){
-	return getScndPrimeter() + getScndPrimeter() + getArea() + getScndArea();
+	return getPrimeter() + getArea();
 }
+	public void printAreaAndPerimeter() {
+		System.out.println("L'area è: " + getArea());
+		System.out.println("Il perimetro è: " + getPrimeter());
+	}
 
-public void printAreaAndPerimeter(){
-		System.out.println("L'area è: "+getArea());
-		System.out.println("La seconda area è: "+getScndArea());
-	    System.out.println("Il perimetro è: " + getPrimeter());
-		System.out.println("Il secondo perimetro é: "+getScndPrimeter());
+	public static void printTwoSquare(Square s1, Square s2) {
+
+		System.out.println("primo rettanangolo : ");
+		s1.printAreaAndPerimeter();
+		System.out.println(" secondo rettangolo: ");
+		s2.printAreaAndPerimeter();
+		System.out.println("la somma delle aree è: " +( s1.area + s2.area));
+
 	}
 
 }
